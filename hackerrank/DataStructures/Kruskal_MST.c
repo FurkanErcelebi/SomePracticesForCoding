@@ -103,7 +103,7 @@ int kruskals(int g_nodes, int g_edges, int* g_from, int* g_to, int* g_weight) {
 
 int main()
 {
-    FILE* fptr = fopen("C:\\Users\\Lenovo\\Documents\\DataStructuresandAlgorithms\\output.txt", "w");
+    FILE* fptr = fopen(getenv("OUTPUT_PATH"), "w");
 	
 	if(fptr == NULL){
 		printf("File cannot opened\n");
